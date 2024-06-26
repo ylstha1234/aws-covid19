@@ -12,20 +12,20 @@ The project architecture leverages several AWS services:
 3.	Datasets related to Covid-19 in CSV format.
 Dataset: https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
 # Milestones and Tasks
-Milestone 1: Data Cleaning and Staging
+# Milestone 1: Data Cleaning and Staging
 Description: Clean the source data and upload the cleaned data into a staging directory on S3.
 Task: Implement a Spark pipeline to clean the source data and upload the cleaned data to the staging directory on S3.
 Steps:
 1.	Source Data Ingestion
 2.	Data Cleaning with Spark
 3.	Upload to S3
-Milestone 2: Glue Table Creation
+# Milestone 2: Glue Table Creation
 Description: Create Glue tables using a Crawler in the Glue Catalog for the cleaned data.
 Task: Configure and execute a Glue Crawler on the cleaned data and generate Glue tables in the Glue Catalog.
 Steps:
 1.	Create and configure a Glue Crawler
 2.	Run the Crawler to create Glue tables
-Milestone 3: Athena Preview and Validation
+# Milestone 3: Athena Preview and Validation
 Description: Utilize Athena for previewing and validating the created tables.
 Task: Write and execute Athena queries to preview data from the created Glue tables and validate the correctness of the data.
 Steps:
